@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using gggyjw;
 
 public class PlayerCcolision : MonoBehaviour
 {
