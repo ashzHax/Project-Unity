@@ -4,7 +4,6 @@ namespace gggyjw
 {
     public class PlayerMovement : MonoBehaviour
     {
-
         public Rigidbody rb;
         public float forwardForce = 2000f;
         public float sidewayForce = 500f;

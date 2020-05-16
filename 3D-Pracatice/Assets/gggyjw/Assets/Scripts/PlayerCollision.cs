@@ -3,18 +3,17 @@ using gggyjw;
 
 namespace gggyjw
 {
-    
-    public class PlayerColision : MonoBehaviour
+    public class PlayerCollision : MonoBehaviour
     {
-        public PlayerMovement movement;
+
+        public PlayerMovement playerMovement;
 
         void OnCollisionEnter(Collision collisionInfo)
         {
-            if (collisionInfo.collider.name == "obstacle")
+            if (collisionInfo.collider.tag == "Obstacle")
             {
-                movement.enabled = false;
+                playerMovement.enabled = false;
                 FindObjectOfType<GameManager>().EndGame();
-                
             }
         }
     }
