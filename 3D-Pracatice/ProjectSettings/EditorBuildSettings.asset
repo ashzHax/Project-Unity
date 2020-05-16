@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/conner/Scenes/Menu.unity
+    guid: 587c70f3c2187c04cb18715430427d71
+  - enabled: 1
+    path: Assets/conner/Scenes/Lavel01.unity
+    guid: 85d8344b1020fe94184e01432926ad19
+  - enabled: 1
+    path: Assets/conner/Scenes/Lavel02.unity
+    guid: 7535fb49a9a66ad4a9a7533573f0c0da
+  - enabled: 1
+    path: Assets/conner/Scenes/Lavel03.unity
+    guid: b769fd5a468b617498672c9d0abee369
+  - enabled: 1
+    path: Assets/conner/Scenes/Credit.unity
+    guid: 8256e3dac2132e24db9ef4a54dae2af7
   m_configObjects: {}
