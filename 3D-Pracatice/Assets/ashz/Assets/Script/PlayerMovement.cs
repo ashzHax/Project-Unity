@@ -10,6 +10,7 @@ namespace ashz
         public Rigidbody rb;
         public float forwardForce = 2000f;
         public float sidewaysForce = 500f;
+        private bool gameOver = false;
 
         // Start is called before the first frame update
         /*
@@ -31,6 +32,14 @@ namespace ashz
         // FixedUpdate is prefered when changing physics (more smoother)
         void FixedUpdate()
         {
+            if (gameOver) return;
+
+            if (rb.position.y < -1f)
+            {
+                FindObjectOfType<GameManager>().EndGame();
+                gameOver = true;
+            }
+
             rb.AddForce(/*X*/0, /*Y*/0, /*Z*/forwardForce * Time.deltaTime);
             if ( Input.GetKey("d") )
             {
