@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\ashz\Assets\Script\FollowPlayer.cs" />
+     <Compile Include="Assets\ashz\Assets\Script\GameManager.cs" />
      <Compile Include="Assets\ashz\Assets\Script\PlayerCollision.cs" />
      <Compile Include="Assets\ashz\Assets\Script\PlayerMovement.cs" />
      <Compile Include="Assets\ashz\Assets\Script\Score.cs" />
