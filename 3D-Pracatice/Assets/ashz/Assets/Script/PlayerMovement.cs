@@ -34,11 +34,13 @@ namespace ashz
             rb.AddForce(/*X*/0, /*Y*/0, /*Z*/forwardForce * Time.deltaTime);
             if ( Input.GetKey("d") )
             {
-                rb.AddForce( sidewaysForce * Time.deltaTime, 0, 0);
+                //rb.AddForce( sidewaysForce * Time.deltaTime, 0, 0);
+                rb.AddForce(sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
             }
             if ( Input.GetKey("a") )
             {
-                rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
+                //rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0);
+                rb.AddForce(-sidewaysForce * Time.deltaTime, 0, 0, ForceMode.VelocityChange);
             }
         }
     }
