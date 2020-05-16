@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using ashz;
 
 namespace ashz
 {
@@ -13,8 +14,10 @@ namespace ashz
             {
                 //Debug.Log("We hit a obstacle");
                 playerMovement.enabled = false;
+                FindObjectOfType<GameManager>().EndGame();
+                //GetComponent<Type>();
+
             }
         }
     }
 }
- 
