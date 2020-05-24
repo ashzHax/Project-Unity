@@ -8,7 +8,7 @@ namespace gggyjw
 
         void OnTriggerEnter()
         {
-            gameManager.CompleteLevel1();
+            gameManager.CompleteLevel();
         }
     }
 }   

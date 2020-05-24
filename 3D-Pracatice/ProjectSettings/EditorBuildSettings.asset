@@ -6,12 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/gggyjw/Scenes/level1.unity
-    guid: 4a2244d1c16849e498da7fe24840dfcc
+    path: Assets/gggyjw/Scenes/Menu.unity
+    guid: b8da0c903f014e241b85f09d0a8f3e5b
   - enabled: 1
-    path: Assets/gggyjw/Scenes/level2.unity
+    path: Assets/gggyjw/Scenes/level1.unity
     guid: 5f4918fff2e9c7e48a98be304d8fc0dd
   - enabled: 1
-    path: Assets/gggyjw/Scenes/level3.unity
+    path: Assets/gggyjw/Scenes/level2.unity
     guid: b21e625e361e91449bbde360f325494c
+  - enabled: 1
+    path: Assets/gggyjw/Scenes/Credit 1.unity
+    guid: 6cbe104260a4d4f4895c82ef2da091b6
   m_configObjects: {}
