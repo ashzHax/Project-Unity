@@ -81,8 +81,10 @@
     <Compile Include="Assets\conner\Assets\Script\PlayerCollision.cs" />
     <Compile Include="Assets\conner\Assets\Script\PlayerMovement.cs" />
     <Compile Include="Assets\conner\Assets\Script\Score.cs" />
+    <Compile Include="Assets\gggyjw\Assets\Scripts\EndTrigger.cs" />
     <Compile Include="Assets\gggyjw\Assets\Scripts\FollowPlayer.cs" />
     <Compile Include="Assets\gggyjw\Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\gggyjw\Assets\Scripts\LevelComplete.cs" />
     <Compile Include="Assets\gggyjw\Assets\Scripts\PlayerCollision.cs" />
     <Compile Include="Assets\gggyjw\Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\gggyjw\Assets\Scripts\ScoreUpdater.cs" />
