@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
+using gggyjw;
 
 namespace gggyjw
 {
-    public class PlayerMovent : MonoBehaviour
+    public class PlayerMovment : MonoBehaviour
     {
         public CharacterController2D controller;
 
