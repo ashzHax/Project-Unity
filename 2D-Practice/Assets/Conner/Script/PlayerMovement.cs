@@ -8,6 +8,8 @@ namespace conner
 
         public CharacterController2D controller;
         public float runSpeed = 40f;
+        public Animator animator;
+
         float horizontalMove = 0f;
         bool jump = false;
         bool crouch = false;
@@ -22,9 +24,13 @@ namespace conner
         {
             horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 
+            animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+
+
             if(Input.GetButton("Jump"))
             {
                 jump = true;
+                animator.SetBool("IsJumping", true);
             }
 
             if(Input.GetButton("Crouch"))
@@ -36,6 +42,16 @@ namespace conner
                 crouch = false;
             }
 
+        }
+
+        public void OnLanding()
+        {
+            animator.SetBool("IsJumping", false);
+        }
+
+        public void OnCrouching(bool isCrouching)
+        {
+            animator.SetBool("IsCrouching", isCrouching);
         }
 
         // Update is called once per frame
