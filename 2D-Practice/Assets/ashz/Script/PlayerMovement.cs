@@ -6,6 +6,7 @@ namespace ashz {
     public class PlayerMovement : MonoBehaviour
     {
         public CharacterController2D myCharacterController;
+        public Animator myAnimator;
         public float forwardSpeed = 50f;
 
         private bool playerJump = false;
@@ -17,9 +18,12 @@ namespace ashz {
             horizontalMove = Input.GetAxisRaw("Horizontal") * forwardSpeed;
             //Debug.Log(horizontalMove);
 
+            myAnimator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+
             if (Input.GetButtonDown("Jump"))
             {
                 playerJump = true;
+                myAnimator.SetBool("isJumping", true);
             }
             if (Input.GetButtonDown("Crouch"))
             {
@@ -29,6 +33,16 @@ namespace ashz {
             {
                 playerCrouch = false;
             }
+        }
+
+        public void OnLanding()
+        {
+            myAnimator.SetBool("isJumping", false);
+        }
+
+        public void OnCrouching(bool isCrouching)
+        {
+            myAnimator.SetBool("isCrouching", isCrouching);
         }
 
         private void FixedUpdate()
